@@ -1,0 +1,98 @@
+
+.portfolio-section {
+    width: 100%;
+    max-width: 1300px;
+    min-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    padding: 60px 20px;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    color: #2e3236;
+    font-size: 34px;
+    font-family: "JetBrains Mono", monospace;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #ff1a1a;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    row-gap: 90px;
+    margin-top: 114px;
+}
+
+.project-card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    padding: 180px 20px 30px 20px;
+}
+
+.project-image {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    height: 220px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c8cccf;
+}
+
+.project-name {
+    margin: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.project-header svg {
+    width: 28px;
+    height: 28px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.project-info {
+    font-family: "Barlow", sans-serif;
+    font-size: 17px;
+    color: #2e3236;   
+}
+
+.project-tech {
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}

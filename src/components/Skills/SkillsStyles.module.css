@@ -1,0 +1,138 @@
+
+.skills-section {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    padding: 60px 20px;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    color: #2e3236;
+    font-size: 34px;
+    font-family: "JetBrains Mono", monospace;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #ff1a1a;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+}
+
+.btn-container {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-container div {
+    display: inline-block;
+    width: auto;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: 1px solid #2e3236;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Barlow", sans-serif;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.btn-container div svg {
+    margin-left: 4px;
+}
+
+.btn-container .active {
+    background-color: #2e3236;
+    color: #ffffff;
+    opacity: 1;
+}
+
+
+
+/* SKILLS CARDS */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    gap: 20px;
+    justify-content: center;
+    padding: 32px 20px 10px 20px;
+    animation: showSkillCards 1.8s ease;
+}
+
+@keyframes showSkillCards {
+    from {
+        opacity: 0;
+        top: -50px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.skill-card {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    border: 2px solid rgb(228, 225, 225);
+    padding: 15px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+    cursor: default;
+    transition: 0.4s ease-in-out;
+}
+
+.skill-card:hover {
+    border: 2px solid #909499;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.04);
+}
+
+.skill {
+    margin: 0;
+    font-size: 20px;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    color: #2e3236;
+}
+
+.description {
+    margin: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    /* text-align: justify; */
+    font-size: 15px;
+    color: #2e3236;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.skill-image {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: auto;
+    height: 40px;
+    opacity: 0.3;
+}

@@ -1,0 +1,54 @@
+
+.contact-section {
+    width: 100%;
+    max-width: 1300px;
+    min-width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.title {
+    margin: 0;
+    color: #2e3236;
+    font-size: 46px;
+    /* font-family: "JetBrains Mono", monospace; */
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Barlow", sans-serif;
+    color: #2e3236;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.contact-btn {
+    padding: 14px 40px;
+    background-color:  #2e3236;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Barlow", sans-serif;
+    text-decoration: none;
+    transition: 0.4s ease-out;
+}
+
+.contact-btn svg {
+    margin-right: 6px;
+}
+
+.contact-btn:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}

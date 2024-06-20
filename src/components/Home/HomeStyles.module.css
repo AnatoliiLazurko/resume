@@ -1,0 +1,246 @@
+
+.home-section {
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+}
+
+.text-border {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+    color: #2e3236;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.my-name {
+    margin: 0;
+    font-size: 80px;
+    font-weight: bold;
+    color: #ff1a1a;
+}
+
+.status {
+    font-size: 18px;
+    color: grey;
+}
+
+.photo-circle {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    /* animation: levitation 3s ease-in-out infinite, shadow 3s ease-in-out infinite; */
+}
+
+@keyframes border-animation {
+    0% {
+        border-color: black;
+    }
+
+    100% {
+        border-color: #ff1a1a;
+    }
+}
+
+.photo {
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.circle-animation {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #ff1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 150px;
+    left: -100px;
+    /* animation: circle-animation 4s infinite; */
+    /* animation: scaleAnimation 5s infinite; */
+}
+
+.circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #ff1a1a;
+}
+
+@keyframes levitation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes circle-animation {
+    0% {
+        width: 200px;
+        height: 200px;
+    }
+
+    50% {
+        width: 180px;
+        height: 180px;
+    }
+
+    100% {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+.black-circle1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #2e3236;
+    position: absolute;
+    bottom: -80px;
+    right: -100px;
+}
+
+.black-circle2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #2e3236;
+    position: absolute;
+    bottom: -80px;
+    right: 90px;
+}
+
+.user-img {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    bottom: 60px;
+    left: 15%;
+}
+
+.react-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -80px;
+    right: 180px;
+    animation: rotate 5s infinite;
+}
+
+.git-branch-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -60px;
+    left: 150px;
+    animation: levitateTilt 5s ease-in-out infinite;
+}
+
+.code-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 55%;
+    bottom: 280px;
+    animation: levitation 3s ease-in-out infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(75px, 0) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(75px, 0) rotate(360deg);
+    }
+}
+
+@keyframes levitateTilt {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    75% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+}
+
+@keyframes scaleAnimation {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
