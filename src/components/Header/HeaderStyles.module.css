@@ -2,7 +2,7 @@
 .header {
     width: 100%;
     height: auto;
-    background-color: white;
+    background-color: transparent;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 20px;
 }
 
 .left-content {

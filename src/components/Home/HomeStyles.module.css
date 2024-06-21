@@ -1,9 +1,21 @@
 
 .home-section {
     width: 100%;
-    height: 700px;
+    height: auto;
     background-color: white;
     position: relative;
+    padding: 250px 0px 400px 0px;
+    background-color: white;
+}
+
+.home-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom right, transparent 50%, var(--main-color) 20%);
 }
 
 .container {
@@ -14,7 +26,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 250px;
+    padding: 0 20px;
 }
 
 .text-border {
@@ -75,15 +87,15 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 150px;
-    left: -100px;
+    bottom: -80px;
+    right: -100px;
     /* animation: circle-animation 4s infinite; */
-    /* animation: scaleAnimation 5s infinite; */
+    animation: scaleAnimation 4s infinite;
 }
 
 .circle {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background-color: #ff1a1a;
 }
@@ -158,8 +170,9 @@
     width: 500px;
     height: 400px;
     position: absolute;
-    bottom: 60px;
-    left: 15%;
+    bottom: 70px;
+    left: 300px;
+    transform: rotate(-15deg);
 }
 
 .react-icon {

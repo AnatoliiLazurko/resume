@@ -19,19 +19,19 @@ const Header = () => {
                 <div className={styles["right-content"]}>
                     <ul className={styles["nav-list"]}>
                         <li className={styles["nav-item"]}>
-                            <Link to="home" spy={true} smooth={true} duration={500}>Home</Link>
+                            <Link to="home" spy={true} smooth={true} duration={500} offset={-80}>Home</Link>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <Link to="about" spy={true} smooth={true} duration={500}>About</Link>
+                            <Link to="about" spy={true} smooth={true} duration={500} offset={-80}>About</Link>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <Link to="skills" spy={true} smooth={true} duration={500}>Skills</Link>
+                            <Link to="skills" spy={true} smooth={true} duration={500} offset={-80}>Skills</Link>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <Link to="projects" spy={true} smooth={true} duration={500}>Projects</Link>
+                            <Link to="projects" spy={true} smooth={true} duration={500} offset={-80}>Projects</Link>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <Link to="contact" spy={true} smooth={true} duration={500}>Contact me</Link>
+                            <Link to="contact" spy={true} smooth={true} duration={500} offset={-80}>Contact me</Link>
                         </li>
                     </ul>
                 </div>

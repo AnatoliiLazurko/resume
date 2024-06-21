@@ -3,6 +3,17 @@ import Slider from "react-slick";
 import styles from './TechnologyStyles.module.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import reactLogo from '../../images/slider/react-logo.png';
+import githubLogo from '../../images/slider/github-logo.png';
+import htmlLogo from '../../images/slider/html-logo.png';
+import cssLogo from '../../images/slider/CSS-logo.png';
+import javascriptLogo from '../../images/slider/javascript-logo.png';
+import reduxLogo from '../../images/slider/redux-logo.png';
+import nodejsLogo from '../../images/slider/nodejs-logo.png';
+import expressLogo from '../../images/slider/express-logo.png';
+import mongodbLogo from '../../images/slider/mongodb-logo.webp';
+import mongooseLogo from '../../images/slider/mongoose-logo.png';
+import postmanLogo from '../../images/slider/postman-logo.png';
 
 const Technology = () => {
 
@@ -46,52 +57,50 @@ const Technology = () => {
     return (
         <div className={styles["technology-section"]}>
 
-            {/* <p className={styles["title"]}>Technologies</p> */}
-
             <div className={styles["slider-container"]}>
                 <Slider {...settings}>
                     <div className={styles["slider"]}>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="" />
+                        <img src={reactLogo} alt="" />
                         <p>React</p>
                     </div>
                     <div className={styles["slider"]}>
-                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" />
+                        <img src={githubLogo} alt="" />
                         <p>Git Hub</p>
                     </div>
                     <div className={styles["slider"]}>
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-html-5-1-1175208.png" alt="" />
+                        <img src={htmlLogo} alt="" />
                         <p>Html</p>
                     </div>
                     <div className={styles["slider"]}>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="" />
+                        <img src={cssLogo} alt="" />
                         <p>CSS</p>
                     </div>
                     <div className={styles["slider"]}>
-                        <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/original/javascript-logo-javascript-icon-transparent-free-png.png" alt="" />
+                        <img src={javascriptLogo} alt="" />
                         <p>JavaScript</p>
                     </div>
                     <div className={styles["slider"]}>
-                        <img src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" alt="" />
+                        <img src={reduxLogo} alt="" />
                         <p>Redux</p>
                     </div>
                     <div className={styles["slider"]}>
-                        <img src="https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png" alt="" />
+                        <img src={nodejsLogo} alt="" />
                         <p>Node js</p>
                     </div>
                     <div className={styles["slider"]}>
-                        <img src="https://images.credly.com/images/1c2c86e1-16ce-4e4d-a425-d1ac96bb026d/express.png" alt="" />
+                        <img src={expressLogo} alt="" />
                         <p>Express js</p>
                     </div>
                     <div className={styles["slider"]}>
-                        <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png" alt="" />
+                        <img src={mongodbLogo} alt="" />
                         <p>MongoDB</p>
                     </div>
                     <div className={styles["slider"]}>
-                        <img src="https://avatars.githubusercontent.com/u/7552965?s=280&v=4" alt="" />
+                        <img src={mongooseLogo} alt="" />
                         <p>Mongoose js</p>
                     </div>
                     <div className={styles["slider"]}>
-                        <img src="https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png" alt="" />
+                        <img src={postmanLogo} alt="" />
                         <p>Postman</p>
                     </div>
                 </Slider>
