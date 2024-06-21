@@ -5,8 +5,11 @@ import blahoFilm from '../../images/projects/blahofilm.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { useInView } from 'react-intersection-observer';
 
 const Portfolio = () => {
+
+    const { ref: projectsRef, inView: projectsVisible } = useInView({ triggerOnce: true, delay: 200 });
 
     const blahofilmGitHub = () => {
         window.open('https://github.com/AnatoliiLazurko/film-project', '_blank');
@@ -18,7 +21,7 @@ const Portfolio = () => {
             
                 <p className={styles["title"]}>My Projects</p>
 
-                <div className={styles["projects-container"]}>
+                <div className={`${styles["projects-container"]} ${projectsVisible ? styles.visible : ''}`} ref={projectsRef}>
 
                     <div className={styles["project-card"]}>
                         <img className={styles["project-image"]} src={blahoFilm} alt="" />

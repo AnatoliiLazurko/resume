@@ -32,6 +32,18 @@
     bottom: -5px;
 }
 
+.skills-unvisible {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.skills-unvisible.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 .btn-container {
     margin-top: 64px;
     display: flex;

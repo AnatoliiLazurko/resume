@@ -29,6 +29,17 @@
     padding: 0 20px;
 }
 
+.me-unvisible {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.me-unvisible.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .text-border {
     margin: 0;
     font-size: 26px;
@@ -47,6 +58,17 @@
 .status {
     font-size: 18px;
     color: grey;
+}
+
+.photo-unvisible {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.photo-unvisible.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .photo-circle {

@@ -47,6 +47,17 @@
 
 /* LEFT SIDE */
 
+.about-me {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about-me.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .about-me p {
     font-size: 18px;
     color: #ebe8e8;
@@ -110,6 +121,17 @@
 }
 
 /* RIGHT SIDE */
+
+.right-side {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.right-side.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
 
 .card {
     width: 100%;

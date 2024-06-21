@@ -23,7 +23,7 @@ const Technology = () => {
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2500,
+        speed: 3000,
         autoplaySpeed: 10,
         cssEase: "linear",
         arrows: false,

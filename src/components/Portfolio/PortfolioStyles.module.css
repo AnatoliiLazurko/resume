@@ -38,6 +38,14 @@
     gap: 40px;
     row-gap: 90px;
     margin-top: 114px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.projects-container.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .project-card {

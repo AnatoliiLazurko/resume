@@ -1,10 +1,15 @@
 import React from 'react';
 import styles from './AboutStyles.module.css';
-import { Element } from 'react-scroll';
+import { Element, Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileImage, faHandshake } from '@fortawesome/free-solid-svg-icons';
+import { useInView } from 'react-intersection-observer';
 
 const About = () => {
+
+    const { ref: aboutMeRef, inView: aboutMeVisible } = useInView({ triggerOnce: true, delay: 200 });
+    const { ref: rightSideRef, inView: rightSideVisible } = useInView({ triggerOnce: true, delay: 200 });
+
     return (
         <Element name="about">
             <div className={styles["about-section"]}>
@@ -13,7 +18,7 @@ const About = () => {
                     <p className={styles["title"]}>About me</p>
 
                     <div className={styles["about-wrap"]}>
-                        <div className={styles["about-me"]}>
+                        <div ref={aboutMeRef} className={`${styles["about-me"]} ${aboutMeVisible ? styles.visible : ''}`}>
                             <p>
                                 I studied at IT STEP Computer Academy for three years in the software development
                                 course, where we learned many different programming languages and technologies.
@@ -33,10 +38,13 @@ const About = () => {
 
                             <div className={styles["btn-container"]}>
                                 <div className={styles["btn-diploma"]}><FontAwesomeIcon icon={faFileImage} /> Diploma</div>
-                                <div className={styles["btn-contact"]}><FontAwesomeIcon icon={faHandshake} /> Contact me</div>
+                                
+                                <Link to="contact" spy={true} smooth={true} duration={500} offset={-80}>
+                                    <div className={styles["btn-contact"]}><FontAwesomeIcon icon={faHandshake} /> Contact me</div>
+                                </Link>
                             </div>
                         </div>
-                        <div>
+                        <div ref={rightSideRef} className={`${styles["right-side"]} ${rightSideVisible ? styles.visible : ''}`}>
                             <div class={styles["card"]}>
                                 <p className={styles["javascript"]}>JavaScript</p>
 

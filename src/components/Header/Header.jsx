@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './HeaderStyles.module.css';
 import { addScrollListener } from './HeaderScript';
 import { Link } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
 
@@ -10,6 +12,12 @@ const Header = () => {
         return () => removeScrollListener();
     }, []);
 
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <header className={styles["header"]} id="header">
             <div className={styles["header-content"]}>
@@ -17,6 +25,9 @@ const Header = () => {
                     &lt;<span>Anatolii</span> /&gt;
                 </div>
                 <div className={styles["right-content"]}>
+                    <div className={styles["menu-button"]} onClick={toggleMenu}>
+                        <FontAwesomeIcon icon={faBars} />
+                    </div>
                     <ul className={styles["nav-list"]}>
                         <li className={styles["nav-item"]}>
                             <Link to="home" spy={true} smooth={true} duration={500} offset={-80}>Home</Link>
