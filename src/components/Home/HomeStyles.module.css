@@ -40,12 +40,11 @@
     transform: translateX(0);
 }
 
-.text-border {
+.hi-text {
     margin: 0;
     font-size: 26px;
     font-weight: bold;
-    color: #2e3236;
-    font-family: "Comfortaa", sans-serif;
+    color: #2e3236;  
 }
 
 .my-name {
@@ -53,11 +52,49 @@
     font-size: 80px;
     font-weight: bold;
     color: #ff1a1a;
+    font-family: "Barlow", sans-serif;
 }
 
-.status {
+.developer {
     font-size: 18px;
     color: grey;
+    font-family: "Barlow", sans-serif;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn-contact {
+    width: 180px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Comfortaa", sans-serif;
+    color: #F1F1F1;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.btn-contact:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.view-portfolio-btn {
+    font-size: 16px;
+    color: #2e3236;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Barlow", sans-serif;
+    cursor: pointer;
 }
 
 .photo-unvisible {
@@ -77,17 +114,6 @@
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
-    /* animation: levitation 3s ease-in-out infinite, shadow 3s ease-in-out infinite; */
-}
-
-@keyframes border-animation {
-    0% {
-        border-color: black;
-    }
-
-    100% {
-        border-color: #ff1a1a;
-    }
 }
 
 .photo {
@@ -96,8 +122,8 @@
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
+    pointer-events: none;
 }
-
 
 .circle-animation {
     width: 200px;
@@ -111,7 +137,6 @@
     position: absolute;
     bottom: -80px;
     right: -100px;
-    /* animation: circle-animation 4s infinite; */
     animation: scaleAnimation 4s infinite;
 }
 
@@ -122,150 +147,13 @@
     background-color: #ff1a1a;
 }
 
-@keyframes levitation {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes shadow {
-    0% {
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    50% {
-        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
-    }
-
-    100% {
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-    }
-}
-
-@keyframes circle-animation {
-    0% {
-        width: 200px;
-        height: 200px;
-    }
-
-    50% {
-        width: 180px;
-        height: 180px;
-    }
-
-    100% {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-
-.black-circle1 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: #2e3236;
+.developer-img {
+    width: 450px;
+    height: 350px;
     position: absolute;
-    bottom: -80px;
-    right: -100px;
-}
-
-.black-circle2 {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #2e3236;
-    position: absolute;
-    bottom: -80px;
-    right: 90px;
-}
-
-.user-img {
-    width: 500px;
-    height: 400px;
-    position: absolute;
-    bottom: 70px;
+    bottom: 50px;
     left: 300px;
     transform: rotate(-15deg);
-}
-
-.react-icon {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: -80px;
-    right: 180px;
-    animation: rotate 5s infinite;
-}
-
-.git-branch-icon {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: -60px;
-    left: 150px;
-    animation: levitateTilt 5s ease-in-out infinite;
-}
-
-.code-icon {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 55%;
-    bottom: 280px;
-    animation: levitation 3s ease-in-out infinite;
-}
-
-@keyframes pulsate {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes rotate {
-    0% {
-        transform: translate(75px, 0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate(75px, 0) rotate(360deg);
-    }
-}
-
-@keyframes levitateTilt {
-
-    0%,
-    100% {
-        transform: translateY(0) rotate(0deg);
-    }
-
-    25% {
-        transform: translateY(-20px) rotate(5deg);
-    }
-
-    50% {
-        transform: translateY(0) rotate(0deg);
-    }
-
-    75% {
-        transform: translateY(-20px) rotate(10deg);
-    }
 }
 
 @keyframes scaleAnimation {

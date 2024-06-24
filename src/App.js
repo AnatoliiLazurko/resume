@@ -5,7 +5,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Portfolio from './components/Portfolio/Portfolio';
 import Skills from './components/Skills/Skills';
-import Technology from './components/Technology/Technology';
+import Feedbacks from './components/Feedbacks/Feedbacks';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Home />
       <About />
       <Skills />
-      <Technology />
+      <Feedbacks />
       <Portfolio />
       <Contact />
     </div>

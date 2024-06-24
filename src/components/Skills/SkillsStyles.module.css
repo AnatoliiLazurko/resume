@@ -1,12 +1,10 @@
 
 .skills-section {
+    position: relative;
     width: 100%;
-    max-width: 1200px;
-    min-width: 1000px;
     height: auto;
-    margin: 0 auto;
-    background-color: white;
     padding: 60px 20px;
+    background-color: white;
 }
 
 .title {
@@ -30,6 +28,14 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: -5px;
+}
+
+.skills-conatiner {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 1000px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .skills-unvisible {
@@ -79,7 +85,7 @@
 
 /* SKILLS CARDS */
 
-.skills-container {
+.skills-block {
     display: grid;
     grid-template-columns: 220px 220px 220px;
     gap: 20px;
@@ -146,5 +152,34 @@
     right: 15px;
     width: auto;
     height: 40px;
-    opacity: 0.3;
+    opacity: 0.8;
+}
+
+.left-image {
+    position: absolute;
+    bottom: 14%;
+    left: 60px;
+    width: 400px;
+}
+
+.right-image {
+    position: absolute;
+    top: 150px;
+    right: 60px;
+    width: 400px;
+    animation: levitation 3s ease-in-out infinite;
+}
+
+@keyframes levitation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }

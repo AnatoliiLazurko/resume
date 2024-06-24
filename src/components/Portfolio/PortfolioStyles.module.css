@@ -51,6 +51,7 @@
 .project-card {
     position: relative;
     width: 100%;
+    min-width: 350px;
     height: auto;
     background-color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);

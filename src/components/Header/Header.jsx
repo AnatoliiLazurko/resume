@@ -39,10 +39,10 @@ const Header = () => {
                             <Link to="skills" spy={true} smooth={true} duration={500} offset={-80}>Skills</Link>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <Link to="projects" spy={true} smooth={true} duration={500} offset={-80}>Projects</Link>
+                            <Link to="portfolio" spy={true} smooth={true} duration={500} offset={-80}>Portfolio</Link>
                         </li>
                         <li className={styles["nav-item"]}>
-                            <Link to="contact" spy={true} smooth={true} duration={500} offset={-80}>Contact me</Link>
+                            <Link to="contact" spy={true} smooth={true} duration={500} offset={-80}>Contact</Link>
                         </li>
                     </ul>
                 </div>

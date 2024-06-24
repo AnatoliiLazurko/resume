@@ -1,9 +1,16 @@
 import React from 'react';
 import styles from './SkillsStyles.module.css';
+import htmlLogo from '../../images/technologies/html-logo.png'
+import cssLogo from '../../images/technologies/CSS-logo.png'
+import javascriptLogo from '../../images/technologies/javascript-logo.png';
+import reactLogo from '../../images/technologies/react-logo.png';
+import reduxLogo from '../../images/technologies/redux-logo.png';
+import reactRouterLogo from '../../images/technologies/react-router-logo.png';
+import axiosLogo from '../../images/technologies/axios-logo.png';
 
 const FrontendSkills = () => {
     return (
-        <div className={styles["skills-container"]}>
+        <div className={styles["skills-block"]}>
 
             <div className={styles["skill-card"]}>
                 <p className={styles["skill"]}>HTML</p>
@@ -11,7 +18,7 @@ const FrontendSkills = () => {
                     I have experience using HTML to create structured,
                     semantic and accessible web pages
                 </p>
-                <img className={styles["skill-image"]} src="https://cdn.iconscout.com/icon/free/png-256/free-html-programming-language-css-editing-style-46278.png" alt="" />
+                <img className={styles["skill-image"]} src={htmlLogo} alt="" />
             </div>
 
             <div className={styles["skill-card"]}>
@@ -20,7 +27,7 @@ const FrontendSkills = () => {
                     I use modern styling methods, such as Flexbox, Grid
                     and CSS animations, to ensure high quality design
                 </p>
-                <img className={styles["skill-image"]} src="https://seeklogo.com/images/C/css3-logo-79B129E90E-seeklogo.com.png" alt="" />
+                <img className={styles["skill-image"]} src={cssLogo} alt="" />
             </div>
 
             <div className={styles["skill-card"]}>
@@ -29,7 +36,7 @@ const FrontendSkills = () => {
                     I have experience in developing interactive web applications using
                     JavaScript, including working with the DOM and event handling
                 </p>
-                <img className={styles["skill-image"]} src="https://www.svgrepo.com/show/327372/logo-javascript.svg" alt="" />
+                <img className={styles["skill-image"]} src={javascriptLogo} alt="" />
             </div>
             
             <div className={styles["skill-card"]}>
@@ -38,7 +45,7 @@ const FrontendSkills = () => {
                     I have experience in developing web applications using React,
                     the ability to create components and manage states
                 </p>
-                <img className={styles["skill-image"]} src="https://static-00.iconduck.com/assets.00/react-icon-2048x1822-iy7h2x8y.png" alt="" />
+                <img className={styles["skill-image"]} src={reactLogo} alt="" />
             </div>
 
             <div className={styles["skill-card"]}>
@@ -47,7 +54,7 @@ const FrontendSkills = () => {
                     I have experience in Redux integration for centralized state management
                     and ensuring data consistency in complex React projects
                 </p>
-                <img className={styles["skill-image"]} src="https://static-00.iconduck.com/assets.00/brand-redux-icon-256x244-tty6ddof.png" alt="" />
+                <img className={styles["skill-image"]} src={reduxLogo} alt="" />
             </div>
             
             <div className={styles["skill-card"]}>
@@ -56,7 +63,7 @@ const FrontendSkills = () => {
                     I have experience using React Router DOM to implement dynamic
                     routing and state management using URL parameters
                 </p>
-                <img className={styles["skill-image"]} src="https://reactrouter.com/_brand/react-router-stacked-monotone.png" alt="" />
+                <img className={styles["skill-image"]} src={reactRouterLogo} alt="" />
             </div>
             
             <div className={styles["skill-card"]}>
@@ -65,17 +72,17 @@ const FrontendSkills = () => {
                     I have the skills to use Axios to make HTTP requests and
                     exchange data with the server in React projects
                 </p>
-                <img className={styles["skill-image"]} src="https://cdn.icon-icons.com/icons2/3911/PNG/512/axios_logo_icon_247516.png" alt="" />
+                <img className={styles["skill-image"]} src={axiosLogo} alt="" />
             </div>
 
-            <div className={styles["skill-card"]}>
+            {/* <div className={styles["skill-card"]}>
                 <p className={styles["skill"]}>Bootstrap</p>
                 <p className={styles["description"]}>
                     I have experience using Bootstrap to quickly develop
                     stylish and responsive web interfaces
                 </p>
                 <img className={styles["skill-image"]} src="https://www.svgrepo.com/show/330083/bootstrap.svg" alt="" />
-            </div>
+            </div> */}
 
         </div>
     );

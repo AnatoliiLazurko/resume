@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './HomeStyles.module.css';
-import myPhoto from '../../images/image1.jpg';
-import { Element } from 'react-scroll';
+import myPhoto from '../../images/image2.jpg';
+import { Element, Link } from 'react-scroll';
 import { useInView } from 'react-intersection-observer';
+import devImage from '../../images/home-section-image.png';
 
 const Home = () => {
 
@@ -14,12 +15,21 @@ const Home = () => {
             <div className={styles["home-section"]}>
                 <div className={styles["container"]}>
                     <div className={`${styles["me-unvisible"]} ${meHomeVisible ? styles.visible : ''}`} ref={meHomeRef}>
-                        <p className={styles["text-border"]}>Hi, my name is</p>
+                        <p className={styles["hi-text"]}>Hi, my name is</p>
                         <p className={styles["my-name"]}>Anatolii Lazurco</p>
-                        <p className={styles["status"]}>
-                            A young entry-level frontend developer. I am gradually developing <br />
+                        <p className={styles["developer"]}>
+                            A young entry-level software developer with a penchant for frontend. <br /> I am gradually developing
                             in this field and enjoy the realization of ideas in real projects
                         </p>
+                        <div className={styles["btn-container"]}>                       
+                            <Link to="contact" spy={true} smooth={true} duration={500} offset={-80}>
+                                <div className={styles["btn-contact"]}>Contact me</div>
+                            </Link>
+
+                            <p className={styles["view-portfolio-btn"]}>
+                                <Link to="portfolio" spy={true} smooth={true} duration={500} offset={-80}>VIEW MY PORTFOLIO</Link>
+                            </p>
+                        </div>
                     </div>
                     <div className={`${styles["photo-unvisible"]} ${myPhotoVisible ? styles.visible : ''}`} ref={myPhotoRef}>
                         <div className={styles["photo-circle"]}>
@@ -32,10 +42,7 @@ const Home = () => {
                     <div className={styles["circle"]}></div>
                 </div>
 
-                {/* <div className={styles["black-circle1"]}></div>
-                <div className={styles["black-circle2"]}></div> */}
-
-                <img src="https://ouch-cdn2.icons8.com/aa-wDxZIZMZXPRM9yfA3__fncUXSlsBJ0L1vPAtmuW0/rs:fit:608:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDc3/L2UyMTMwZGI2LWM1/NjEtNDMzMC04MDYw/LWFmNzQ3NDVmNzkw/Yi5zdmc.png" alt="" className={styles["user-img"]} />
+                <img src={devImage} alt="Developer" className={styles["developer-img"]} />
 
             </div>
         </Element> 
