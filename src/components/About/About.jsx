@@ -55,7 +55,7 @@ const About = () => {
                             </div>
                         </div>
                         <div ref={rightSideRef} className={`${styles["right-side"]} ${rightSideVisible ? styles.visible : ''}`}>
-                            <div class={styles["card"]}>
+                            <div className={styles["card"]}>
                                 <p className={styles["javascript"]}>JavaScript</p>
 
                                 <div className={styles["code-space"]}>
@@ -116,7 +116,7 @@ const About = () => {
                                 </div>
                             </div>
 
-                            <div class={styles["console"]}>
+                            <div className={styles["console"]}>
                                 <p className={styles["javascript"]}>Console</p>
 
                                 <div className={styles["code-space"]}>

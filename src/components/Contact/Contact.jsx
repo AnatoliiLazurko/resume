@@ -27,7 +27,7 @@ const Contact = () => {
                         Thank you for taking the time to review my resume.
                     </p>
 
-                    <div class={styles["btn-container"]}>
+                    <div className={styles["btn-container"]}>
                         <a href={`mailto:${myEmail}?subject=${subject}&body=${body}`} className={styles["contact-btn"]}><FontAwesomeIcon icon={faEnvelope}/> Send Email</a>
                     </div>
                 </div>

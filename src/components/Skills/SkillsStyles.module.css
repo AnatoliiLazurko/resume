@@ -11,7 +11,7 @@
     margin: 0;
     text-align: center;
     font-weight: 600;
-    color: #2e3236;
+    color: var(--main-color);
     font-size: 34px;
     font-family: "JetBrains Mono", monospace;
     position: relative;
@@ -22,7 +22,7 @@
     display: block;
     width: 70px;
     height: 3px;
-    background-color: #ff1a1a;
+    background-color: var(--second-color);
     margin: 0 auto;
     position: absolute;
     left: 50%;
@@ -62,7 +62,7 @@
     width: auto;
     border-radius: 8px;
     padding: 10px 20px;
-    border: 1px solid #2e3236;
+    border: 1px solid var(--main-color);
     text-align: center;
     font-size: 17px;
     font-weight: 600;
@@ -76,7 +76,7 @@
 }
 
 .btn-container .active {
-    background-color: #2e3236;
+    background-color: var(--main-color);
     color: #ffffff;
     opacity: 1;
 }
@@ -129,7 +129,7 @@
     font-size: 20px;
     font-family: "JetBrains Mono", monospace;
     font-weight: 600;
-    color: #2e3236;
+    color: var(--main-color);
 }
 
 .description {
@@ -140,7 +140,7 @@
     right: 15px;
     /* text-align: justify; */
     font-size: 15px;
-    color: #2e3236;
+    color: var(--main-color);
     font-family: "Barlow", sans-serif;
     font-weight: 500;
     opacity: 0.8;

@@ -28,7 +28,7 @@ const Header = () => {
                     <div className={styles["menu-button"]} onClick={toggleMenu}>
                         <FontAwesomeIcon icon={faBars} />
                     </div>
-                    <ul className={styles["nav-list"]}>
+                    <ul className={`${styles['nav-list']} ${isMenuOpen ? styles['nav-list-open'] : ''}`}>
                         <li className={styles["nav-item"]}>
                             <Link to="home" spy={true} smooth={true} duration={500} offset={-80}>Home</Link>
                         </li>
