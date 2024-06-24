@@ -1,28 +1,38 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.cf792ee9.css",
-    "main.js": "/resume/static/js/main.2e1a00f3.js",
+    "main.css": "/resume/static/css/main.cf9ae241.css",
+    "main.js": "/resume/static/js/main.d5aa7f33.js",
     "static/js/453.90c38bfe.chunk.js": "/resume/static/js/453.90c38bfe.chunk.js",
     "static/media/blahofilm.png": "/resume/static/media/blahofilm.5442c240ad282670a91b.png",
-    "static/media/image1.jpg": "/resume/static/media/image1.aade9c720b95887ded3e.jpg",
+    "static/media/php-logo.png": "/resume/static/media/php-logo.613a3f67834881bfb0a5.png",
+    "static/media/image2.jpg": "/resume/static/media/image2.bf839e6f83b627f49fa2.jpg",
     "static/media/redux-logo.png": "/resume/static/media/redux-logo.1b4bb5fceb01b19da59d.png",
     "static/media/react-logo.png": "/resume/static/media/react-logo.8a6fc0a24a800d1e0f4a.png",
+    "static/media/contact-section-image.webp": "/resume/static/media/contact-section-image.0faf2cab685331bf09c1.webp",
+    "static/media/skills-section-left.png": "/resume/static/media/skills-section-left.87dd1c49d36d7f621017.png",
+    "static/media/csharp-logo.png": "/resume/static/media/csharp-logo.f089e215291596c8b583.png",
+    "static/media/home-section-image.png": "/resume/static/media/home-section-image.af81aba9762bb46032da.png",
+    "static/media/react-router-logo.png": "/resume/static/media/react-router-logo.9e0c67ad02087ffd3d89.png",
+    "static/media/skills-section-right.jpg": "/resume/static/media/skills-section-right.76c6129d74a708596652.jpg",
     "static/media/github-logo.png": "/resume/static/media/github-logo.bff4fa197b137e7ab9c6.png",
+    "static/media/vscode-logo.png": "/resume/static/media/vscode-logo.38c43cb0e3f7a5018477.png",
+    "static/media/express-logo2.png": "/resume/static/media/express-logo2.28e54229612236e007cc.png",
     "static/media/CSS-logo.png": "/resume/static/media/CSS-logo.58dfbebae4a02001b50e.png",
-    "static/media/express-logo.png": "/resume/static/media/express-logo.7aa676f01551f463646d.png",
+    "static/media/axios-logo.png": "/resume/static/media/axios-logo.f84cf736cff5257b0b96.png",
     "static/media/mongodb-logo.webp": "/resume/static/media/mongodb-logo.c4ee58337727a94a7f78.webp",
     "static/media/nodejs-logo.png": "/resume/static/media/nodejs-logo.8f912e6eff277ae16489.png",
+    "static/media/java-logo.webp": "/resume/static/media/java-logo.2ad736f544afeb32b9fe.webp",
     "static/media/slick.svg": "/resume/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/resume/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/resume/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/resume/index.html",
     "static/media/slick.woff": "/resume/static/media/slick.295183786cd8a1389865.woff",
-    "main.cf792ee9.css.map": "/resume/static/css/main.cf792ee9.css.map",
-    "main.2e1a00f3.js.map": "/resume/static/js/main.2e1a00f3.js.map",
+    "main.cf9ae241.css.map": "/resume/static/css/main.cf9ae241.css.map",
+    "main.d5aa7f33.js.map": "/resume/static/js/main.d5aa7f33.js.map",
     "453.90c38bfe.chunk.js.map": "/resume/static/js/453.90c38bfe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf792ee9.css",
-    "static/js/main.2e1a00f3.js"
+    "static/css/main.cf9ae241.css",
+    "static/js/main.d5aa7f33.js"
   ]
 }
