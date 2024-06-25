@@ -34,9 +34,10 @@
 
 .projects-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 390px 390px 390px;
     gap: 40px;
     row-gap: 90px;
+    justify-content: center;
     margin-top: 114px;
     opacity: 0;
     transform: translateY(40px);
@@ -104,4 +105,68 @@
     font-family: "Barlow", sans-serif;
     font-size: 17px;
     font-weight: 500;
+}
+
+
+/* ADAPTATION */
+
+@media (max-width: 1300px) {
+    .projects-container {
+        grid-template-columns: minmax(350px, 390px) minmax(350px, 390px);;
+    }
+}
+
+@media (max-width: 1000px) {
+    .portfolio-section {
+        min-width: auto;
+        padding: 48px 20px;
+    }
+
+    .projects-container {
+        margin-top: 98px;
+        gap: 30px;
+        row-gap: 90px;
+        /* grid-template-columns: 390px; */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .projects-container {
+        margin-top: 98px;
+        row-gap: 90px;
+        grid-template-columns: minmax(350px, 370px);
+    }
+
+    .project-card {
+        padding-top: 160px;
+    }
+    
+    .project-image {
+        height: 200px;
+    }
+
+    .project-info {
+        font-size: 16px;
+    }
+
+    .project-tech {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .projects-container {
+        margin-top: 76px;
+        row-gap: 80px;
+    }
 }

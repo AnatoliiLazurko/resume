@@ -246,6 +246,15 @@
     .btn-container {
         margin-top: 32px;
     }
+
+    .btn-container div {
+        font-size: 15px;
+    }
+
+    .btn-container div svg {
+        height: 15px;
+        width: auto;
+    }
 }
 
 
@@ -255,8 +264,12 @@
     }
 
     .skills-block {
-        grid-template-columns: 200px 200px;
+        grid-template-columns: minmax(180px, 200px) minmax(180px, 200px);
         gap: 10px;
+    }
+
+    .skill-image {
+        height: 35px;
     }
 
     .skill {
@@ -267,9 +280,12 @@
         height: 200px;
     }
 
-    .btn-container div {
-        font-size: 15px;
+    /* .btn-container div {
         padding: 10px 15px;
+    } */
+
+    .btn-container div svg {
+        display: none;
     }
 
     .description {
