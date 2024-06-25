@@ -20,16 +20,23 @@ const Feedbacks = () => {
         autoplaySpeed: 10,
         cssEase: "linear",
         arrows: false,
-        pauseOnHover: true,
+        pauseOnHover: false,
         pauseOnFocus: false,
         swipe: false,
         centerMode: true,
         focusOnSelect: false,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
+                    speed: 11000,
                 }
             },
         ]
@@ -37,56 +44,54 @@ const Feedbacks = () => {
 
     return (
         <div className={styles["feedbacks-section"]}>
-            <div className={styles["slider-block"]}>
+            <div className={styles["slider-container"]}>
 
-                <div className={styles["slider-container"]}>
-                    <Slider {...settings}>
-                        <div className={styles["slide"]}>
-                            <img src={reactLogo} alt="" />
-                            <p className={styles["teacher"]}>React Teacher</p>
-                            <p className={styles["feedback"]}>
-                                Anatolii, each of your work is done with care, it is immediately clear that you
-                                know what you need and are working towards your goal diligently and persistently
-                            </p>
-                        </div>
+                <Slider {...settings}>
+                    <div className={styles["slide"]}>
+                        <img src={reactLogo} alt="" />
+                        <p className={styles["teacher"]}>React Teacher</p>
+                        <p className={styles["feedback"]}>
+                            Anatolii, each of your work is done with care, it is immediately clear that you
+                            know what you need and are working towards your goal diligently and persistently
+                        </p>
+                    </div>
 
-                        <div className={styles["slide"]}>
-                            <img src={javascriptLogo} alt="" />
-                            <p className={styles["teacher"]}>JavaScript Teacher</p>
-                            <p className={styles["feedback"]}>
-                                Student Anatolii impresses with his great work ethic and determination in achieving
-                                his goals. He is always ready to take responsibility and make significant efforts to succeed
-                            </p>
-                        </div>
+                    <div className={styles["slide"]}>
+                        <img src={javascriptLogo} alt="" />
+                        <p className={styles["teacher"]}>JavaScript Teacher</p>
+                        <p className={styles["feedback"]}>
+                            Student Anatolii impresses with his great work ethic and determination in achieving
+                            his goals. He is always ready to take responsibility and make significant efforts to succeed
+                        </p>
+                    </div>
 
-                        <div className={styles["slide"]}>
-                            <img src={javaLogo} alt="" />
-                            <p className={styles["teacher"]}>Java Teacher</p>
-                            <p className={styles["feedback"]}>
-                                I am satisfied with how the course went. You made an effort to understand the subject.
-                                The homework assignments were completed at a high level
-                            </p>
-                        </div>
+                    <div className={styles["slide"]}>
+                        <img src={javaLogo} alt="" />
+                        <p className={styles["teacher"]}>Java Teacher</p>
+                        <p className={styles["feedback"]}>
+                            I am satisfied with how the course went. You made an effort to understand the subject.
+                            The homework assignments were completed at a high level
+                        </p>
+                    </div>
 
-                        <div className={styles["slide"]}>
-                            <img src={phpLogo} alt="" />
-                            <p className={styles["teacher"]}>PHP Teacher</p>
-                            <p className={styles["feedback"]}>
-                                Good job! All tasks were completed thoroughly and with high quality! Keep it up!
-                            </p>
-                        </div>
+                    <div className={styles["slide"]}>
+                        <img src={phpLogo} alt="" />
+                        <p className={styles["teacher"]}>PHP Teacher</p>
+                        <p className={styles["feedback"]}>
+                            Good job! All tasks were completed thoroughly and with high quality! Keep it up!
+                        </p>
+                    </div>
 
-                        <div className={styles["slide"]}>
-                            <img src={csharpLogo} alt="" />
-                            <p className={styles["teacher"]}>C# Teacher</p>
-                            <p className={styles["feedback"]}>
-                                The student has good potential. He approaches homework assignments with
-                                quality and responsibility
-                            </p>
-                        </div>
+                    <div className={styles["slide"]}>
+                        <img src={csharpLogo} alt="" />
+                        <p className={styles["teacher"]}>C# Teacher</p>
+                        <p className={styles["feedback"]}>
+                            The student has good potential. He approaches homework assignments with
+                            quality and responsibility
+                        </p>
+                    </div>
 
-                    </Slider>
-                </div>
+                </Slider>
 
             </div>
         </div>
