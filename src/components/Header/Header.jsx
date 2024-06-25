@@ -3,7 +3,7 @@ import styles from './HeaderStyles.module.css';
 import { addScrollListener } from './HeaderScript';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
 
@@ -24,28 +24,17 @@ const Header = () => {
                 <div className={styles["left-content"]}>
                     &lt;<span>Anatolii</span> /&gt;
                 </div>
-                <div className={styles["right-content"]}>
-                    <div className={styles["menu-button"]} onClick={toggleMenu}>
-                        <FontAwesomeIcon icon={faBars} />
-                    </div>
-                    <ul className={`${styles['nav-list']} ${isMenuOpen ? styles['nav-list-open'] : ''}`}>
-                        <li className={styles["nav-item"]}>
-                            <Link to="home" spy={true} smooth={true} duration={500} offset={-80}>Home</Link>
-                        </li>
-                        <li className={styles["nav-item"]}>
-                            <Link to="about" spy={true} smooth={true} duration={500} offset={-80}>About</Link>
-                        </li>
-                        <li className={styles["nav-item"]}>
-                            <Link to="skills" spy={true} smooth={true} duration={500} offset={-80}>Skills</Link>
-                        </li>
-                        <li className={styles["nav-item"]}>
-                            <Link to="portfolio" spy={true} smooth={true} duration={500} offset={-80}>Portfolio</Link>
-                        </li>
-                        <li className={styles["nav-item"]}>
-                            <Link to="contact" spy={true} smooth={true} duration={500} offset={-80}>Contact</Link>
-                        </li>
-                    </ul>
-                </div>
+                <nav className={`${styles["nav-list"]} ${isMenuOpen ? styles["nav-list-open"] : ''}`}>
+                    <Link to="home" spy={true} smooth={true} duration={500} offset={-80} className={styles["nav-item"]}>Home</Link>
+                    <Link to="about" spy={true} smooth={true} duration={500} offset={-80} className={styles["nav-item"]}>About</Link>
+                    <Link to="skills" spy={true} smooth={true} duration={500} offset={-80} className={styles["nav-item"]}>Skills</Link>
+                    <Link to="portfolio" spy={true} smooth={true} duration={500} offset={-80} className={styles["nav-item"]}>Portfolio</Link>
+                    <Link to="contact" spy={true} smooth={true} duration={500} offset={-80} className={styles["nav-item"]}>Contact</Link>
+                </nav>
+                <button className={styles["menu-button"]} onClick={toggleMenu}>
+                    {!isMenuOpen && <FontAwesomeIcon icon={faBars} className={styles["menu-mark"]} />}
+                    {isMenuOpen && <FontAwesomeIcon icon={faXmark} className={styles["close-mark"]} />}
+                </button>
             </div>
         </header>
     );
