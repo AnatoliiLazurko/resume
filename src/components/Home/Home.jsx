@@ -44,8 +44,6 @@ const Home = () => {
                     <div className={styles["circle"]}></div>
                 </div>
 
-                
-
             </div>
         </Element> 
     );

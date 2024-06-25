@@ -344,13 +344,14 @@
     }
 
     .circle-animation {
-        width: 100px;
+        /* width: 100px;
         height: 100px;
-        right: -55px;
+        right: -55px; */
+        display: none;
     }
 
-    .circle {
+    /* .circle {
         width: 60px;
         height: 60px;
-    }
+    } */
 }

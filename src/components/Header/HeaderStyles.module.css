@@ -10,6 +10,7 @@
     top: 0;
     left: 0;
     z-index: 10;
+    overflow-x: hidden;
 }
 
 .header-content {
@@ -87,6 +88,7 @@
 @media (max-width: 1000px) {
     .header-content {
         min-width: auto;
+        width: 100%;
     }
 
     .left-content {
