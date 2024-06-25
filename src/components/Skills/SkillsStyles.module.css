@@ -5,6 +5,7 @@
     height: auto;
     padding: 60px 20px;
     background-color: white;
+    z-index: 1;
 }
 
 .title {
@@ -31,9 +32,7 @@
 }
 
 .skills-conatiner {
-    width: 100%;
-    max-width: 1200px;
-    min-width: 1000px;
+    min-width: auto;
     height: auto;
     margin: 0 auto;
 }
@@ -49,7 +48,6 @@
     transform: translateY(0);
 }
 
-
 .btn-container {
     margin-top: 64px;
     display: flex;
@@ -63,6 +61,7 @@
     border-radius: 8px;
     padding: 10px 20px;
     border: 1px solid var(--main-color);
+    background-color: #ffffff;
     text-align: center;
     font-size: 17px;
     font-weight: 600;
@@ -111,6 +110,7 @@
     width: 100%;
     height: 220px;
     border-radius: 12px;
+    background-color: #ffffff;
     border: 2px solid rgb(228, 225, 225);
     padding: 15px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
@@ -155,11 +155,19 @@
     opacity: 0.8;
 }
 
+.left-image,
+.right-image {
+    position: absolute;
+    z-index: -1;
+}
+
 .left-image {
     position: absolute;
     bottom: 14%;
     left: 60px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
 }
 
 .right-image {
@@ -181,5 +189,90 @@
 
     100% {
         transform: translateY(0);
+    }
+}
+
+
+/* ADAPTATION */
+
+@media (max-width: 1500px) {
+    .left-image {
+        left: 20px;
+        width: 300px;
+    }
+
+    .right-image {
+        right: 20px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 1260px) {
+    .left-image {
+        display: none;
+    }
+
+    .right-image {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .skills-section {
+        padding-top: 48px;
+    }
+
+    .skills-conatiner {
+        min-width: auto;
+    }
+
+    .btn-container {
+        margin-top: 48px;
+    }
+}  
+
+
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 28px;
+    }
+
+    .skills-block {
+        grid-template-columns: 220px 220px;
+    }
+
+    .btn-container {
+        margin-top: 32px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .skills-block {
+        grid-template-columns: 200px 200px;
+        gap: 10px;
+    }
+
+    .skill {
+        font-size: 18px;
+    }
+
+    .skill-card {
+        height: 200px;
+    }
+
+    .btn-container div {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    .description {
+        font-size: 14px;
     }
 }
