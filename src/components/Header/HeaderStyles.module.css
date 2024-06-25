@@ -97,6 +97,10 @@
 
 
 @media (max-width: 1000px) {
+    .header-content {
+        min-width: auto;
+    }
+
     .menu-button {
         display: block;
     }

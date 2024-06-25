@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <Element name="home">
             <div className={styles["home-section"]}>
-                <div className={styles["container"]}>
+                <div className={styles["home-container"]}>
                     <div className={`${styles["me-unvisible"]} ${meHomeVisible ? styles.visible : ''}`} ref={meHomeRef}>
                         <p className={styles["hi-text"]}>Hi, my name is</p>
                         <p className={styles["my-name"]}>Anatolii Lazurco</p>
@@ -36,13 +36,15 @@ const Home = () => {
                             <img src={myPhoto} alt="Avatar" className={styles["photo"]} />
                         </div>
                     </div>
+
+                    <img src={devImage} alt="Developer" className={styles["developer-img"]} />
                 </div>
 
                 <div className={styles["circle-animation"]}>
                     <div className={styles["circle"]}></div>
                 </div>
 
-                <img src={devImage} alt="Developer" className={styles["developer-img"]} />
+                
 
             </div>
         </Element> 

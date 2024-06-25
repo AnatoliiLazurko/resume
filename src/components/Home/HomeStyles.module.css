@@ -1,11 +1,10 @@
 
 .home-section {
+    position: relative;
     width: 100%;
     height: auto;
     background-color: white;
-    position: relative;
     padding: 250px 0px 400px 0px;
-    background-color: white;
 }
 
 .home-section::before {
@@ -18,7 +17,8 @@
     background: linear-gradient(to bottom right, transparent 50%, var(--main-color) 20%);
 }
 
-.container {
+.home-container {
+    position: relative;
     width: 100%;
     max-width: 1200px;
     min-width: 1000px;
@@ -151,9 +151,9 @@
     width: 450px;
     height: 350px;
     position: absolute;
-    bottom: 50px;
-    left: 300px;
-    transform: rotate(-15deg);
+    bottom: -340px;
+    left: 70px;
+    /* transform: rotate(-15deg); */
 }
 
 @keyframes scaleAnimation {
@@ -170,8 +170,187 @@
 
 
 
+/* ADAPTATION */
+
 @media (max-width: 1000px) {
+    .home-section {
+        padding: 180px 0px 250px 0px;
+    }
+
+    .home-section::before {
+        top: 40%;
+    }
+
+    .home-container {
+        min-width: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hi-text {
+        font-size: 24px;
+    }
+
+    .my-name {
+        font-size: 70px;
+    }
+
+    .developer {
+        font-size: 16px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 15px;
+    }
+
+    .btn-contact {
+        width: 160px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .view-portfolio-btn {
+        font-size: 15px;
+    }
+
     .developer-img {
         display: none;
+    }
+
+    .photo-circle {
+        margin-top: 32px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .circle-animation {
+        width: 180px;
+        height: 180px;
+        bottom: -55px;
+        right: -95px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-section {
+        padding: 150px 0px 200px 0px;
+    }
+
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hi-text {
+        font-size: 22px;
+    }
+
+    .my-name {
+        font-size: 58px;
+    }
+
+    .developer {
+        font-size: 16px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .btn-contact {
+        width: 160px;
+        height: 40px;
+    }
+
+    .view-portfolio-btn {
+        font-size: 14px;
+    }
+
+    .photo-circle {
+        margin-top: 32px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .circle-animation {
+        width: 140px;
+        height: 140px;
+        bottom: -40px;
+        right: -80px;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-section {
+        padding: 100px 0px 150px 0px;
+    }
+
+    .hi-text {
+        font-size: 18px;
+    }
+
+    .my-name {
+        font-size: 40px;
+    }
+
+    .developer {
+        font-size: 16px;
+    }
+
+    .btn-contact {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .view-portfolio-btn {
+        font-size: 12px;
+    }
+
+    .photo-circle {
+        margin-top: 32px;
+        width: 170px;
+        height: 170px;
+    }
+
+    .photo {
+        width: 170px;
+        height: 170px;
+    }
+
+    .circle-animation {
+        width: 100px;
+        height: 100px;
+        right: -55px;
+    }
+
+    .circle {
+        width: 60px;
+        height: 60px;
     }
 }
