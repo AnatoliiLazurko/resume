@@ -63,7 +63,7 @@ const About = () => {
                                         <span className={styles["const"]}>const</span>
                                         <span className={styles["variable"]}> age</span>
                                         <span className={styles["mark-equal"]}> =</span>
-                                        <span className={styles["number"]}> 18</span>
+                                        <span className={styles["number"]}> 19</span>
                                         <span className={styles["semicolon"]}>;</span>
                                     </p>
                                     <p>
@@ -121,7 +121,7 @@ const About = () => {
 
                                 <div className={styles["code-space"]}>
                                     <p className={styles["semicolon"]}>
-                                        Hello, I am 18 years old and I am Ukrainian, but I live in London.
+                                        Hello, I am 19 years old and I am Ukrainian, but I live in London.
                                         I completed my studies at IT STEP and received a software developer diploma.
                                     </p>
                                 </div>
